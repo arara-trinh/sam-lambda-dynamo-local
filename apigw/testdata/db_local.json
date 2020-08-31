@@ -1,0 +1,27 @@
+{
+    "TableName": "local_company_table2",
+    "KeySchema": [
+      {
+        "AttributeName": "service",
+        "KeyType": "HASH"
+      },
+      {
+        "AttributeName": "description",
+        "KeyType": "RANGE"
+      }
+    ],
+    "AttributeDefinitions": [
+      {
+        "AttributeName": "service",
+        "AttributeType": "S"
+      },
+      {
+        "AttributeName": "description",
+        "AttributeType": "S"
+      }
+    ],
+    "ProvisionedThroughput": {
+      "ReadCapacityUnits": 2,
+      "WriteCapacityUnits": 2
+    }
+  }
